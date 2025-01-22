@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+                                         /* COMPUTER SETTINGS */
+
+        @media screen and (min-width: 501px) {
+            body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(fotos/CAT_VisualArts_Hero.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .header {
+            width: 100%;
+            height: 15%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 0;
+            align-items: center;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
+            box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: space-between;
+            z-index: 1000;
+        }
+
+        .ibimage,
+        .atlaslogo {
+            width: auto;
+            max-width: 20%;
+            max-height: 100%;
+            object-fit: contain; 
+        }
+
+        .about {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: #3B3B3B;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 10%;
+            padding: 16px 15px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            width: 10%;
+        }
+
+        .about:hover {
+            color: #fff;
+            background-color: #1A1A1A;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .about:active {
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .abouttext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            color: #333;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 15%;
+        }
+
+        .image-box {
+            width: 100%;
+            position: relative;
+            background-color: #fff;
+            padding-top: 100%; /* Maintain square aspect ratio */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid rgb(0, 0, 0);
+            transition: transform 0.3s ease, z-index 0.3s ease;
+        }
+
+        .image-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .quote {
+            margin-top: 60px; /* Increased space to push it lower */
+            padding: 10px 20px; /* Adds padding inside the quote box */
+            font-style: italic; /* Italicizes the text for emphasis */
+            font-size: 18px; /* Adjusts font size */
+            text-align: center; /* Centers the text */
+            color: #ffffff; /* Keeps the text color white */
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            border: 4px solid #0078d7; /* Adds a solid border */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 5px; /* Slightly rounded corners */
+            width: 80%; /* Limits the width */
+            max-width: 600px; /* Prevents it from becoming too wide */
+            margin-left: auto; /* Centers the quote horizontally */
+            margin-right: auto; /* Centers the quote horizontally */
+            position: relative; /* Allows for position adjustment */
+            top: 20px; /* Pushes the element further down */
+            margin-bottom: 10%;
+    }
+
+
+
+        }
+
+
+                                                /* PHONE SETTINGS */
+
+        @media screen and (max-width: 500px) {
+            body {
+            background-image: url(fotos/CAT_VisualArts_Hero.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size:cover;
+            }
+            .header {
+                width: 100%;
+                height: 15%;
+                position: fixed; 
+                top: 0%;
+                left: 0%;
+                padding: 0;
+                align-items: center;
+                display: flex;
+                background-color: rgb(20, 127, 31);
+                background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
+                box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
+                font-size: 9px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                justify-content: space-between;
+                z-index: 10;
+            }
+
+            .ibimage,
+            .atlaslogo {
+                width: 30%;
+                text-align: center;
+            }
+
+            .about {
+                        appearance: none;
+                        background-color: transparent;
+                        border: 2px solid #1A1A1A;
+                        border-radius: 15px;
+                        box-sizing: border-box;
+                        color: #3B3B3B;
+                        cursor: pointer;
+                        display: inline-block;
+                        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin: 10%;
+                        min-height: 60px;
+                        min-width: 0;
+                        outline: none;
+                        padding: 15px 16px;
+                        padding-left: 10px;
+                        text-align: center;
+                        text-decoration: none;
+                        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+                        user-select: none;
+                        -webkit-user-select: none;
+                        touch-action: manipulation;
+                        width: 50%;
+                        will-change: transform;
+
+                    }
+                    .about:disabled {
+                        pointer-events: none;
+                        }
+
+                    .about:hover {
+                        color: #fff;
+                        background-color: #1A1A1A;
+                        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+                        transform: translateY(-2px);
+                        }
+
+                    .about:active {
+                        box-shadow: none;
+                        transform: translateY(0);
+                        }
+                    .about,
+                    .ibimage,
+                    .atlaslogo {
+                        text-align: center;
+                    }
+                    .abouttext {
+                        position: absolute; 
+                        top: 50%; 
+                        left: 50%; 
+                        transform: translate(-50%, -50%); 
+                        width: 60%;
+                        height: 50%;
+                        padding: 20px; 
+                        background-color: rgba(255, 255, 255, 0.9); 
+                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+                        border-radius: 10px;
+                        font-family: Arial, Helvetica, sans-serif; 
+                        font-size: 16px; 
+                        line-height: 1.6; 
+                        text-align: center; 
+                        color: #333;  
+            }
+            .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 15%;
+        }
+        
+        
+                .image-grid .image-box:first-child {
+                margin-top: 50px; /* Adjust this value as needed */
+            }
+
+
+                    .image-box {
+                        width: 100%;
+                        position: relative;
+                        background-color: #fff;
+                        padding-top: 100%; /* Maintain square aspect ratio */
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                        border-radius: 10px;
+                        overflow: hidden;
+                        border: 3px solid rgb(0, 0, 0);
+                        transition: transform 0.3s ease, z-index 0.3s ease;
+                        z-index: 0;
+                        margin-top: 14px;
+                    }
+
+                    .image-box img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .quote {
+            margin-top: 60px; /* Increased space to push it lower */
+            padding: 10px 20px; /* Adds padding inside the quote box */
+            font-style: italic; /* Italicizes the text for emphasis */
+            font-size: 18px; /* Adjusts font size */
+            text-align: center; /* Centers the text */
+            color: #ffffff; /* Keeps the text color white */
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            border: 4px solid #0078d7; /* Adds a solid border */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            border-radius: 5px; /* Slightly rounded corners */
+            width: 80%; /* Limits the width */
+            max-width: 600px; /* Prevents it from becoming too wide */
+            margin-left: auto; /* Centers the quote horizontally */
+            margin-right: auto; /* Centers the quote horizontally */
+            position: relative; /* Allows for position adjustment */
+            top: 20px; /* Pushes the element further down */
+            margin-bottom: 10%;
+    }
+
+
+                        }
+
+    </style>
+</head> 
+ 
+<body>
+    <div class="header">
+        <div class="content-container">
+            <div class="images">
+                <a href="https://ibo.org">
+                    <img src="fotos/png-clipart-logo-international-baccalaureate-school-ib-diploma-programme-grenaa-gymnasium-hf-training-courses-blue-text-removebg-preview.png"
+                        class="ibimage">
+                </a>
+                <a href="https://atlas-asm.es">
+                    <img src="fotos/atlas-removebg-preview.png" class="atlaslogo">
+                </a>
+            </div>
+        </div>
+        <a href="/visualarts/about.html" class="about">
+            About
+        </a>
+    </div>
+
+    <div class="image-grid">
+        <div class="image-box">
+            <a href="image1.html">
+                <img src="fotos/IMG_8830.jpg" class="img1" alt="Image 1">
+            </a>
+        </div>
+        <div class="image-box">
+            <a href="image2.html">
+                <img src="fotos/IMG_8833.jpg" class="img2" alt="Image 2">
+            </a>
+        </div>
+        <div class="image-box">
+            <a href="image3.html">
+                <img src="fotos/IMG_8836.jpg" class="img3" alt="Image 3">
+            </a>
+
+        </div>
+        <div class="image-box">
+            <a href="image4.html">
+                <img src="fotos/IMG_8838.jpg" class="img4" alt="Image 4">
+            </a>
+
+        </div>
+        <div class="image-box">
+            <a href="image5.html">
+                <img src="fotos/IMG_8839.jpg" class="img5" alt="Image 5">
+            </a>
+        </div>
+    </div>
+    <div class="quote">
+        “Imagination is everything. It is the preview of life's coming attractions.” – Albert Einstein
+    </div>
+</body>
+
+</html>
