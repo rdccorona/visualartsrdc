@@ -248,39 +248,45 @@
     }
 
     .image-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-        padding: 20px;
-        margin-top: 15%;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit ensures responsiveness */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+    margin-top: 50%;
+}
 
-    .image-grid .image-box:first-child {
-        margin-top: 50px; /* Adjust this value as needed */
-    }
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit ensures responsiveness */
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+    margin-top: 20%; /* Add space between the header and the grid (adjust as needed) */
+}
 
-    .image-box {
-        width: 100%;
-        position: relative;
-        background-color: #fff;
-        padding-top: 100%; /* Maintain square aspect ratio */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        overflow: hidden;
-        border: 3px solid rgb(0, 0, 0);
-        transition: transform 0.3s ease, z-index 0.3s ease;
-        z-index: 0;
-        margin-top: 14px; /* Uniform margin between boxes */
-    }
+.image-box {
+    width: 100%;
+    position: relative;
+    padding-top: 100%; /* Enforces a square aspect ratio */
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid rgb(0, 0, 0);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    z-index: 0;
+    margin-top: 54px; /* Uniform margin between boxes */
+}
 
-    .image-box img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the box completely */
+    object-position: center; /* Centers the image */
+}
+
 
     .quote {
         margin-top: 60px; /* Increased space to push it lower */
