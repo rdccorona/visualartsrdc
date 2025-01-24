@@ -6,201 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        @media screen and (min-width: 501px) {
-            body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(fotos/CAT_VisualArts_Hero.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-            overflow-x: hidden;
-        }
+       @media screen and (min-width: 501px) {
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(fotos/CAT_VisualArts_Hero.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow-x: hidden;
+    }
 
-        .header {
-            width: 100%;
-            height: 15%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 0;
-            align-items: center;
-            display: flex;
-            background-color: rgb(255, 255, 255);
-            background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
-            box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            justify-content: space-between;
-            z-index: 1000;
-        }
+    .header {
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
+        box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: space-between;
+        z-index: 1000;
+    }
 
-        .ibimage,
-        .atlaslogo {
-            width: auto;
-            max-width: 20%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+    .ibimage,
+    .atlaslogo {
+        width: auto;
+        max-width: 20%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 
-        .about {
-            appearance: none;
-            background-color: transparent;
-            border: 2px solid #1A1A1A;
-            border-radius: 15px;
-            box-sizing: border-box;
-            color: #3B3B3B;
-            cursor: pointer;
-            display: inline-block;
-            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            font-weight: 600;
-            margin: 10%;
-            padding: 16px 15px;
-            text-align: center;
-            text-decoration: none;
-            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-            width: 10%;
-        }
+    .about {
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #1A1A1A;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #3B3B3B;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10%;
+        padding: 16px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        width: 10%;
+    }
 
-        .about:hover {
-            color: #fff;
-            background-color: #1A1A1A;
-            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-            transform: translateY(-2px);
-        }
+    .about:hover {
+        color: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
 
-        .about:active {
-            box-shadow: none;
-            transform: translateY(0);
-        }
+    .about:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
 
-        .abouttext {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60%;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            font-size: 16px;
-            line-height: 1.6;
-            text-align: center;
-            color: #333;
-        }
+    .abouttext {
+        margin: 0 auto;
+        margin-top: 6%; /* Reduced space from the top */
+        margin-bottom: 20px; /* Adjusted space from the bottom */
+        width: 60%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        color: #333;
+    }
 
-        }
+    .image-container {
+        text-align: center;
+        margin-top: 10%; /* Adjusted to give space between the header and image */
+        margin-bottom: 5px; /* Reduced space between image and bottom text */
+    }
+
+    .image {
+        width: 60%; /* Adjust width of image to be smaller */
+        max-width: 400px; /* Ensure it doesn't grow too large */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        display: block; /* Centers the image */
+        margin: 0 auto; /* Centers the image */
+    }
+}
+
 
         @media screen and (max-width: 500px) {
-            body {
-            background-image: url(fotos/CAT_VisualArts_Hero.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed; 
-            background-size:cover;
-            }
-            .header {
-                width: 100%;
-                height: 15%;
-                position: fixed;
-                top: 0%;
-                left: 0%;
-                padding: 0;
-                align-items: center;
-                display: flex;
-                background-color: rgb(20, 127, 31);
-                background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
-                box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
-                font-size: 9px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                justify-content: space-between;
-            }
+    body {
+        background-image: url(fotos/CAT_VisualArts_Hero.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-            .ibimage,
-            .atlaslogo {
-                width: 30%;
-                text-align: center;
-            }
+    .header {
+        width: 100%;
+        height: 15%;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        padding: 0;
+        align-items: center;
+        display: flex;
+        background-color: rgb(20, 127, 31);
+        background-image: linear-gradient(to right, rgb(90, 96, 91), rgb(255, 255, 255));
+        box-shadow: 10px 2px 30px 12px rgb(104, 105, 104);
+        font-size: 9px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: space-between;
+    }
 
-            .about {
-                        appearance: none;
-                        background-color: transparent;
-                        border: 2px solid #1A1A1A;
-                        border-radius: 15px;
-                        box-sizing: border-box;
-                        color: #3B3B3B;
-                        cursor: pointer;
-                        display: inline-block;
-                        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-                        font-size: 16px;
-                        font-weight: 600;
-                        line-height: normal;
-                        margin: 10%;
-                        min-height: 60px;
-                        min-width: 0;
-                        outline: none;
-                        padding: 15px 16px;
-                        padding-left: 10px;
-                        text-align: center;
-                        text-decoration: none;
-                        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-                        user-select: none;
-                        -webkit-user-select: none;
-                        touch-action: manipulation;
-                        width: 50%;
-                        will-change: transform;
+    .about {
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #1A1A1A;
+        border-radius: 15px;
+        box-sizing: border-box;
+        color: #3B3B3B;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 10%;
+        padding: 16px 30px;  /* Adjust padding to make it wider */
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        width: auto;  /* Makes the button size auto based on text length */
+        min-width: 120px; /* Optional: Set a minimum width for consistency */
+    }
 
-                    }
-                    .about:disabled {
-                        pointer-events: none;
-                        }
+    .about:hover {
+        color: #fff;
+        background-color: #1A1A1A;
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+    }
 
-                    .about:hover {
-                        color: #fff;
-                        background-color: #1A1A1A;
-                        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-                        transform: translateY(-2px);
-                        }
+    .about:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
 
-                    .about:active {
-                        box-shadow: none;
-                        transform: translateY(0);
-                        }
-                    .about,
-                    .ibimage,
-                    .atlaslogo {
-                        text-align: center;
-                    }
-                    .abouttext {
-                        position: absolute; 
-                        top: 50%; 
-                        left: 50%; 
-                        transform: translate(-50%, -50%); 
-                        width: 60%;
-                        height: 50%;
-                        padding: 20px; 
-                        background-color: rgba(255, 255, 255, 0.9); 
-                        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-                        border-radius: 10px;
-                        font-family: Arial, Helvetica, sans-serif; 
-                        font-size: 16px; 
-                        line-height: 1.6; 
-                        text-align: center; 
-                        color: #333; 
-            }
-            }
+    .ibimage,
+    .atlaslogo {
+        width: 30%;
+        text-align: center;
+    }
 
+    .abouttext {
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px; /* Added margin below the text box */
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        color: #333;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 20px;
+        padding-top: 15%;
+    }
+
+    .image {
+        width: 100%; /* Makes the image smaller */
+        max-width: 320px; /* Limits maximum size */
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+}
     </style>
 </head>
-
 
 <body>
     <div class="header">
         <div class="content-container">
             <div class="images">
                 <a href="https://ibo.org">
-                    <img src="fotos/png-clipart-logo-international-baccalaureate-school-ib-diploma-programme-grenaa-gymnasium-hf-training-courses-blue-text-removebg-preview.png"
-                        class="ibimage">
+                    <img src="fotos/png-clipart-logo-international-baccalaureate-school-ib-diploma-programme-grenaa-gymnasium-hf-training-courses-blue-text-removebg-preview.png" class="ibimage">
                 </a>
                 <a href="https://atlas-asm.es">
                     <img src="fotos/atlas-removebg-preview.png" class="atlaslogo">
@@ -212,6 +220,14 @@
         </a>
     </div>
 
-</body>
+    <div class="image-container">
+        <img src="fotos/IMG_8860.jpg" alt="Pillow made from leather jeans with leopard print patches" class="image">
+    </div>
+    
+
+    <div class="abouttext">
+        
+
+        This artwork features a cardboard base covered with paper, over which irregularly cut scraps are arranged with gaps between them. In these spaces, a flowing river of blue emerges, shifting in shades from deep navy to light sky blue. The contrasting textures of the scraps and the vibrant, fluid river create a striking balance between fragmentation and harmony.
 
 </html>
